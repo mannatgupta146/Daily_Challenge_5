@@ -24,7 +24,7 @@ The project presents a **story-driven, editorial-style layout** with layered vis
 ### 🔹 Design Inspiration  
 Inspired by **conceptual medical and product presentation designs**, focusing on visual clarity and storytelling.
 
-<img src="./assets/original.png" alt="Design Inspiration">  
+<img src="./assets/original.png" alt="Design Inspiration" height="500px">  
 
 ### 🔹 Final Output  
 The final build translates the concept into a **structured HTML & SCSS implementation** with layered visuals and strong layout control.
