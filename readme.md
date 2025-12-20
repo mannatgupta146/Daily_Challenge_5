@@ -1,47 +1,49 @@
-# 🚀 Daily Challenge 5 - Sheryians Coding School  
-🔗 [Dribbble Design Reference](https://dribbble.com/shots/26552564-Personal-Portfolio-Website-Design)
+# 🚀 Daily Challenge 5 – Sheryians Coding School  
+🔗 [Design Reference](https://dribbble.com/)
 
-A sleek and responsive **Personal Portfolio Website** inspired by a Dribbble concept.  
-It highlights professional details, creative sections, and a futuristic dark-themed design built using **HTML & CSS** only.  
+A visually rich and immersive **Aeris Concept Website** focused on **asthma care guidance and awareness**.  
+The project presents a **story-driven, editorial-style layout** with layered visuals and strong typography, built using **HTML & SCSS only**.
 
+---
 
 ## ✨ Features  
 
 | 🌟 Feature | 💡 Description |
 |:-----------|:----------------|
-| 🖤 Modern Dark Theme | Elegant black interface with orange gradients and subtle neon glow highlights |
-| 🧑‍💻 Hero Section | Clean introduction with profile image, name, and a “Hire Me” button |
-| 🧠 Skills Section | Animated progress bars showcasing design and development expertise |
-| 🧩 What I Do | Structured list of services with smooth transitions and visuals |
-| 💼 Project Showcase | Interactive project preview with CTA to explore more work |
-| 💵 Pricing Plans | Stylish pricing cards with toggle for monthly/annual plans |
-| 💬 Testimonials | Glassmorphism-inspired testimonial cards from international clients |
-| 💫 Scrolling Banner | Continuous “GET STARTED ✦” animation for dynamic motion |
-| 📊 Stats Counter | Displays achievements like clients, experience, and success rate |
-| 📱 Responsive Layout | Adapts beautifully to any screen size or device |
+| 🫁 Medical Concept UI | Healthcare-focused interface centered around asthma care and inhaler guidance |
+| 🎨 Artistic Layout | Magazine-style design with layered images, shapes, and bold typography |
+| 🧭 Guided Flow | Step-by-step visual explanation of how to use the Aeris device |
+| 🖼️ Visual Storytelling | Rich use of medical imagery, illustrations, and abstract elements |
+| 📐 CSS Grid & Flexbox | Complex layouts implemented using modern CSS Grid and Flexbox |
+| 🧩 Multi-Section Design | Clearly divided pages for introduction, usage process, and impact |
+| 🔤 Custom Typography | Multiple fonts used to establish hierarchy and visual identity |
+| 🌈 Color-Driven UI | Warm medical tones with strong contrast and depth |
+| 🧱 No JavaScript | Entire project built using only HTML and SCSS |
+| 🖥️ Desktop-Focused | Optimized for large screens and concept showcase |
 
+---
 
 ## 🖼️ Preview  
 
-### 🔹 Original Design Reference  
-This project was inspired by the **Dribbble design** below — the foundation for the layout and color theme.  
-🔗 [View on Dribbble](https://dribbble.com/shots/26552564-Personal-Portfolio-Website-Design)  
-<img src="./assets/original.png" alt="Original Design" height="300px">  
+### 🔹 Design Inspiration  
+Inspired by **conceptual medical and product presentation designs**, focusing on visual clarity and storytelling.
+
+<img src="./assets/original.png" alt="Design Inspiration" height="300px">  
 
 ### 🔹 Final Output  
-Here’s the **final version built using HTML & CSS**.  
-It features a **modern dark layout**, glass effects, animated text, and smooth section transitions — fully responsive and cleanly structured.  
-<img src="./assets/demo.gif" alt="Demo">  
+The final build translates the concept into a **structured HTML & SCSS implementation** with layered visuals and strong layout control.
 
-> 🎨 The design closely matches the Dribbble concept while enhancing readability, responsiveness, and user interaction with animations.
+<img src="./assets/demo.gif" alt="Aeris Demo">  
 
+---
 
 ## 🧠 Learning Outcome  
-Enhanced skills in **modern web UI design**, **CSS layout techniques (Grid & Flexbox)**, and **animation timing**.  
-Learned to replicate a **Dribbble mockup** using only HTML and CSS while keeping it accessible and visually consistent.  
+Gained hands-on experience with **advanced layout composition**, **SCSS structuring**, and **design-to-code translation**.  
+Learned to manage complex visual hierarchies using only HTML and SCSS.
 
+---
 
 ## 🙌 Acknowledgement  
-This project was created as part of **Sheryians Coding School — Cohort 2.0 (Daily Challenge 4)**.  
+This project was created as part of **Sheryians Coding School — Cohort 2.0 (Daily Challenge 5)**.
 
 ---
