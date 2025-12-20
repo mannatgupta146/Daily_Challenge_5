@@ -1,15 +1,1162 @@
+@font-face {
+  font-family: f1;
+  src: url(./fonts/Helvetica.ttf);
+}
+@font-face {
+  font-family: f2;
+  src: url(./fonts/KAFEINE\ Personal\ Use.ttf);
+}
+@font-face {
+  font-family: f3;
+  src: url(./fonts/Nulshock\ Bd.otf);
+}
+@font-face {
+  font-family: f4;
+  src: url(./fonts/Anything\ Script_1\ Italic\ TTF.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  width: 100%;
+html,
+body {
   height: 100%;
+  width: 100%;
 }
 
-#main {
-  width: 100%;
+main {
   height: 100%;
+  width: 100%;
+}
+main .page1 {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15vw 1fr 15vw;
+  grid-template-areas: "left center right";
+  padding: 20px;
+  background-image: url(./assets/pastel-yellow-vignette-concrete-textured-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .page1 .left {
+  grid-area: left;
+  color: #D87A1E;
+  position: relative;
+}
+main .page1 .left .righttextup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+}
+main .page1 .left .righttextup h1 {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: end;
+}
+main .page1 .left .righttextup i {
+  font-size: 20px;
+}
+main .page1 .left .righttextdwon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .page1 .left .righttextdwon h1 {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: end;
+}
+main .page1 .left .righttextdwon i {
+  font-size: 20px;
+}
+main .page1 .left .rightdots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+}
+main .page1 .left .rightdots .rightdots1 {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: black;
+  margin-top: 10px;
+}
+main .page1 .left .mask {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 10%;
+  right: 20%;
+  z-index: 9;
+}
+main .page1 .left .mask img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .left .rightround {
+  height: 150px;
+  width: 100px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: #B4997E;
+  position: absolute;
+  right: 0;
+  bottom: 11%;
+}
+main .page1 .center {
+  grid-area: center;
+  display: grid;
+  grid-template-rows: 38% 25% 1fr;
+  gap: 5px;
+  perspective: 1000px;
+}
+main .page1 .center .name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  position: relative;
+}
+main .page1 .center .name h1 {
+  font-size: 24vw;
+  font-family: f2;
+  font-weight: 500;
+  line-height: 1;
+  color: #D87A1E;
+}
+main .page1 .center .name P {
+  position: absolute;
+  left: -4%;
+  top: 45%;
+  rotate: -59deg;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #D87A1E;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+main .page1 .center .name .lin {
+  border: 1px solid #D87A1E;
+  width: 78%;
+  position: absolute;
+  top: 6%;
+  left: 21%;
+}
+main .page1 .center .name img {
+  position: absolute;
+  height: 50%;
+  left: -5%;
+  bottom: -25%;
+  transform: rotateX(160deg);
+}
+main .page1 .center .name #span {
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+  font-family: f4;
+}
+main .page1 .center .name .black {
+  height: 15px;
+  width: 30px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 28%;
+}
+main .page1 .center .centercenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+main .page1 .center .centercenter .sun {
+  height: 150px;
+  width: 110px;
+  position: absolute;
+  right: 24%;
+  z-index: 99;
+}
+main .page1 .center .centercenter .sun img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centercenter .box {
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(135deg, #6f685b 0%, #412e21 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  position: relative;
+}
+main .page1 .center .centercenter .box .img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+main .page1 .center .centercenter .box img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centercenter .box .plus {
+  position: absolute;
+  bottom: 0;
+  left: -8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .page1 .center .centercenter .box .plus h1 {
+  line-height: 1;
+  font-weight: 900;
+  font-family: f1;
+}
+main .page1 .center .centercenter .box .img7 img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 5%;
+  right: 40%;
+}
+main .page1 .center .centercenter .centerbox {
+  height: 10px;
+  width: 40px;
+  border: 2px solid black;
+  position: absolute;
+  left: 32%;
+  top: 30%;
+}
+main .page1 .center .centercenter #qr {
+  position: absolute;
+  height: 15%;
+  width: 18%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  rotate: 90deg;
+  left: 23%;
+  top: -10%;
+}
+main .page1 .center .centercenter #dots {
+  height: 100%;
+  width: 30%;
+  clip-path: polygon(50% 0%, 82% 14%, 85% 57%, 67% 100%, 17% 100%, 0 55%, 8% 10%);
+  margin-right: 10%;
+  opacity: 0.3;
+}
+main .page1 .center .centercenter #pump {
+  height: 22vw;
+  position: absolute;
+  top: -74%;
+  left: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 9;
+  margin-bottom: 10%;
+}
+main .page1 .center .centercenter .box2 {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: end;
+  flex-direction: column;
+  overflow: hidden;
+}
+main .page1 .center .centercenter .box2 img {
+  height: 70%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter {
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  grid-template-areas: "footerleft footercen footerright";
+  background-image: url(./assets/red\ page.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main .page1 .center .centerfooter .footerleft {
+  grid-area: footerleft;
+  position: relative;
+}
+main .page1 .center .centerfooter .footerleft .footerlefttop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+main .page1 .center .centerfooter .footerleft #box {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(222, 161, 161);
+  border-radius: 50%;
+  overflow: hidden;
+}
+main .page1 .center .centerfooter .footerleft #box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter .footerleft .hand {
+  position: absolute;
+  z-index: 99;
+  height: 25vw;
+  top: -70%;
+}
+main .page1 .center .centerfooter .footerleft .hand img {
+  height: 100%;
+}
+main .page1 .center .centerfooter .footerleft .graph {
+  height: 5vw;
+  position: absolute;
+  top: -10%;
+  rotate: -25deg;
+  left: -10%;
+}
+main .page1 .center .centerfooter .footerleft .graph img {
+  height: 100%;
+}
+main .page1 .center .centerfooter .footerleft .line2 {
+  position: absolute;
+  border: 1px solid #000000;
+  z-index: 2;
+  width: 78%;
+  rotate: 90deg;
+  bottom: 50%;
+  left: 10%;
+}
+main .page1 .center .centerfooter .footerleft .round {
+  height: 100px;
+  width: 100px;
+  background-color: #d1b897;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  border-radius: 50%;
+}
+main .page1 .center .centerfooter .footercen {
+  grid-area: footercen;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  position: relative;
+}
+main .page1 .center .centerfooter .footercen .textfootercen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: f2;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 30%;
+}
+main .page1 .center .centerfooter .footercen .textfootercen h1 {
+  font-weight: 300;
+  color: #D87A1E;
+  font-size: 15px;
+}
+main .page1 .center .centerfooter .footercen .footerp {
+  border: 2px solid white;
+  font-family: f4;
+  line-height: 1;
+}
+main .page1 .center .centerfooter .footercen .glasstube {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -10%;
+  left: 0;
+}
+main .page1 .center .centerfooter .footercen .glasstube img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter .footercen .lungs2 {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+main .page1 .center .centerfooter .footercen .lungs2 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter .footerright {
+  grid-area: footerright;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  align-items: end;
+}
+main .page1 .center .centerfooter .footerright img {
+  top: -70%;
+  left: -50%;
+  position: absolute;
+  height: 22vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter .footerright #lungs2 {
+  position: absolute;
+  top: -50%;
+  left: -20%;
+}
+main .page1 .center .centerfooter .footerright #lungs2 img {
+  height: 25vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  rotate: -20deg;
+}
+main .page1 .center .centerfooter .footerright #footerrightbox1 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: 6%;
+  top: 18%;
+}
+main .page1 .center .centerfooter .footerright #footerrightbox2 {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  right: -15%;
+  top: 18%;
+  overflow: hidden;
+}
+main .page1 .center .centerfooter .footerright #footerrightbox2 img {
+  height: 200%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .page1 .center .centerfooter .footerright #footerrightbox3 {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(220, 121, 75);
+  border-radius: 50%;
+  position: absolute;
+  right: -15%;
+  top: 43%;
+}
+main .page1 .center .centerfooter .footerright i {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  font-size: 25px;
+}
+main .page1 .center .centerfooter .footerright .dots {
+  display: flex;
+  gap: 10px;
+}
+main .page1 .center .centerfooter .footerright .dot1 {
+  height: 30px;
+  width: 30px;
+  background-color: #D87A1E;
+  border-radius: 50%;
+}
+main .page1 .center .centerfooter .footerright .dot2 {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+main .page1 .right {
+  grid-area: right;
+  position: relative;
+}
+main .page1 .right img {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+main .page2 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/pastel-yellow-vignette-concrete-textured-background.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 28% 1fr 28%;
+  grid-template-rows: 10vh 1fr 1fr;
+  grid-template-areas: "page2header page2header page2header" "page2centerleft page2centercenter page2centerright " " page2footer page2footer page2footer ";
+  position: relative;
+  overflow: hidden;
+}
+main .page2 > img {
+  position: absolute;
+  rotate: -20deg;
+  top: -20%;
+  right: -18%;
+  width: 30%;
+}
+main .page2 > h1 {
+  position: absolute;
+  right: 10%;
+  top: 12%;
+  font-family: f1;
+  font-size: 4rem;
+  transform: rotate(20deg);
+  color: #D87A1E;
+  text-shadow: 8px 0px 1px black;
+  z-index: 99;
+  text-transform: uppercase;
+}
+main .page2 > h1 span {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+main .page2 > h2 {
+  position: absolute;
+  font-family: f2;
+  text-transform: uppercase;
+  color: white;
+  right: 10%;
+  top: 50%;
+  font-size: 10rem;
+  text-shadow: 1px 5px 5px black;
+}
+main .page2 .page2lin1 {
+  height: 2px;
+  width: 250px;
+  background-color: #000000;
+  position: absolute;
+  rotate: 90deg;
+  top: 40%;
+  left: 18%;
+}
+main .page2 .page2lin2 {
+  height: 2px;
+  width: 250px;
+  background-color: #000000;
+  position: absolute;
+  rotate: 90deg;
+  top: 43%;
+  right: 20%;
+  width: 200px;
+}
+main .page2 .page2header {
+  grid-area: page2header;
+  position: relative;
+}
+main .page2 .page2header img {
+  height: 20hv;
+  width: 50vh;
+  position: absolute;
+  top: -100%;
+  left: 1%;
+}
+main .page2 .page2header #magnif {
+  left: 80%;
+  top: -70%;
+  z-index: 99;
+  height: 200px;
+  width: 200px;
+}
+main .page2 .page2centerleft {
+  grid-area: page2centerleft;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 2rem 0rem;
+}
+main .page2 .page2centerleft img {
+  height: 20vw;
+  position: absolute;
+  bottom: -8%;
+  left: 0;
+  z-index: 99;
+}
+main .page2 .page2centerleft h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #C98038;
+  text-decoration: underline;
+  margin-right: 20%;
+}
+main .page2 .page2centerleft p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 18%;
+}
+main .page2 .page2centerleft h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #C98038;
+  text-decoration: underline;
+  margin-right: 17%;
+}
+main .page2 .page2centercenter {
+  grid-area: page2centercenter;
+  padding: 2rem 0rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 80%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+main .page2 .page2centercenter h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #C98038;
+  font-weight: 600;
+}
+main .page2 .page2centercenter .page2centercenterbottom {
+  display: flex;
+  color: white;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomleft {
+  width: 50%;
+  padding: 0rem 1rem;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomleft h1 {
+  background-color: #44413C;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  padding: 0.4rem 0rem;
+  color: white;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomleft h1 span {
+  background-color: #131211;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  border: 1px orange solid;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomleft p {
+  font-size: 0.7rem;
+  color: black;
+  font-weight: 600;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomright {
+  width: 50%;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomright h1 {
+  background-color: #44413C;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  padding: 0.4rem 0rem;
+  color: white;
+  margin-right: 1rem;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomright h1 span {
+  background-color: #131211;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  border: 1px orange solid;
+  left: 10px;
+}
+main .page2 .page2centercenter .page2centercenterbottom .page2centercenterbottomright p {
+  font-size: 0.7rem;
+  color: black;
+  font-weight: 600;
+}
+main .page2 .page2centercenter .childimg {
+  position: absolute;
+  bottom: -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .page2 .page2centercenter .childimg img {
+  width: 12%;
+  height: 100%;
+}
+main .page2 .page2centerright {
+  grid-area: page2centerright;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0rem 1rem;
+  overflow: hidden;
+}
+main .page2 .page2centerright h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #C98038;
+  text-decoration: underline;
+}
+main .page2 .page2centerright p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+main .page2 .page2footer {
+  grid-area: page2footer;
+  position: relative;
+  background-image: url(./assets/page2footer2.0.png);
+}
+main .page2 .page2footer img {
+  width: 10%;
+  position: absolute;
+  top: 40%;
+}
+main .page2 .page2footer .li1 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  rotate: -20deg;
+}
+main .page2 .page2footer .li2 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 56%;
+  left: 15%;
+  rotate: 10deg;
+}
+main .page2 .page2footer .li3 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 56%;
+  left: 23%;
+  rotate: -10deg;
+}
+main .page2 .page2footer .li4 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 56%;
+  left: 31%;
+  rotate: 10deg;
+}
+main .page2 .page2footer .li5 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 52%;
+  left: 39%;
+  rotate: -20deg;
+}
+main .page2 .page2footer .li6 {
+  width: 100px;
+  height: 2px;
+  background-color: #C25338;
+  position: absolute;
+  top: 52%;
+  left: 46%;
+  rotate: 20deg;
+}
+main .page2 .page2footer .round1 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 49%;
+  left: 14%;
+}
+main .page2 .page2footer .round2 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 54%;
+  left: 22%;
+}
+main .page2 .page2footer .round3 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+main .page2 .page2footer .round4 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 54%;
+  left: 38%;
+}
+main .page2 .page2footer .round5 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 42%;
+  left: 46%;
+}
+main .page2 .page2footer .round6 {
+  height: 20px;
+  width: 20px;
+  background-color: #C25338;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 54%;
+  left: 53%;
+}
+main .page2 .page2footer .page2footertext1 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 60%;
+  left: 12%;
+}
+main .page2 .page2footer .page2footertext2 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 40%;
+  left: 19%;
+}
+main .page2 .page2footer .page2footertext3 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 60%;
+  left: 28%;
+}
+main .page2 .page2footer .page2footertext4 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 40%;
+  left: 35%;
+}
+main .page2 .page2footer .page2footertext5 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 60%;
+  left: 43%;
+}
+main .page2 .page2footer .page2footertext6 {
+  font-size: 0.6rem;
+  background-color: black;
+  color: #C25338;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  padding: 0px 5px;
+  top: 55%;
+  left: 55%;
+}
+main .page3 {
+  height: 100%;
+  width: 100%;
+  background-image: url(./assets/pastel-yellow-vignette-concrete-textured-background.jpg);
+  background-size: cover;
+  position: relative;
+  overflow-y: hidden;
+}
+main .page3 .page3header {
+  height: auto;
+  width: 100%;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+main .page3 .page3header h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-family: f3;
+  color: #EC9E43;
+}
+main .page3 .page3header .lintext {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  gap: 10px;
+}
+main .page3 .page3header .lintext .page3headerlin {
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(to right, orange 60%, rgb(156, 153, 153));
+}
+main .page3 .page3header .lintext .lintextbootm {
+  display: flex;
+  justify-content: space-between;
+}
+main .page3 .page3header .lintext .lintextbootm .lintextleft {
+  width: 50%;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+main .page3 .page3header .lintext .lintextbootm .lintextright {
+  width: 50%;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+main .page3 .pics {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+}
+main .page3 .pics img {
+  height: 60px;
+  width: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main .page3 .roundtext {
+  width: 55vw;
+  height: 55vw;
+  background-color: #9E4733;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -50%;
+  left: 23%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+main .page3 .roundtext h1 {
+  font-family: f3;
+  font-size: 3rem;
+  color: rgb(183, 183, 183);
+}
+main .page3 .page3lin1 {
+  height: 2px;
+  width: 30%;
+  border-top: 2px dotted #60352b;
+  position: absolute;
+  rotate: 90deg;
+  top: 70%;
+  left: -7%;
+  width: 22%;
+}
+main .page3 .page3lin2 {
+  height: 2px;
+  width: 30%;
+  border-top: 2px dotted #60352b;
+  position: absolute;
+  rotate: 90deg;
+  top: 57%;
+  left: 11%;
+  width: 34%;
+}
+main .page3 .page3lin3 {
+  height: 2px;
+  width: 30%;
+  border-top: 2px dotted #60352b;
+  position: absolute;
+  rotate: 90deg;
+  top: 55%;
+  left: 38%;
+  width: 32%;
+}
+main .page3 .page3lin4 {
+  height: 2px;
+  width: 30%;
+  border-top: 2px dotted #60352b;
+  position: absolute;
+  rotate: 90deg;
+  top: 70%;
+  left: 67%;
+  width: 22%;
+}
+main .page3 .page3lin5 {
+  height: 2px;
+  width: 30%;
+  border-top: 2px dotted #60352b;
+  position: absolute;
+  rotate: 90deg;
+  top: 70%;
+  left: 85%;
+  width: 22%;
+}
+main .page3 .lin1textpage3 {
+  width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+}
+main .page3 .lin1textpage3 h1 {
+  font-size: 0.7rem;
+  color: #9E4733;
+}
+main .page3 .lin1textpage3 p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+main .page3 .lin2textpage3 {
+  width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+main .page3 .lin2textpage3 h1 {
+  font-size: 0.7rem;
+  color: #9E4733;
+}
+main .page3 .lin2textpage3 p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+main .page3 .lin3textpage3 {
+  width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 57%;
+}
+main .page3 .lin3textpage3 h1 {
+  font-size: 0.7rem;
+  color: #9E4733;
+}
+main .page3 .lin3textpage3 p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+main .page3 .lin4textpage3 {
+  width: 20%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  width: 15%;
+}
+main .page3 .lin4textpage3 h1 {
+  font-size: 0.7rem;
+  color: #9E4733;
+}
+main .page3 .lin4textpage3 p {
+  font-size: 0.7rem;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+main .page3 #clouds1 {
+  width: 20%;
+  position: absolute;
+  left: 0;
+  top: 18%;
+}
+main .page3 #clouds2 {
+  width: 20%;
+  position: absolute;
+  right: 0;
+  top: 14%;
+}
+main .page3 #page3footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
 }/*# sourceMappingURL=style.css.map */
