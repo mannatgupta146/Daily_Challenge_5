@@ -93,8 +93,8 @@ main {
                 position: absolute;
                 @include flex();
                 flex-direction: column;
-                bottom: 0;
-                right: 0;
+                bottom: 10%;
+                right: 4%;
                 z-index: 9;
 
                 .rightdots1 {
@@ -110,12 +110,11 @@ main {
                 height: 80px;
                 width: 80px;
                 border-radius: 50%;
-                border: 2px solid black;
+                border: 1px solid black;
                 position: absolute;
                 bottom: 10%;
                 right: 20%;
                 z-index: 9;
-
 
                 img {
                     height: 100%;
@@ -126,14 +125,13 @@ main {
 
             .rightround {
                 height: 150px;
-                width: 100px;
+                width: 150px;
                 border-top-left-radius: 50%;
                 border-bottom-left-radius: 50%;
                 background-color: #B4997E;
                 position: absolute;
-                right: 0;
+                right: -30%;
                 bottom: 11%;
-
             }
 
 
@@ -147,7 +145,6 @@ main {
             perspective: 1000px;
 
             .name {
-
                 @include flex();
                 align-items: start;
                 position: relative;
@@ -158,11 +155,9 @@ main {
                     font-weight: 500;
                     line-height: 1;
                     color: #D87A1E;
-
-
                 }
 
-                P {
+                p {
                     position: absolute;
                     left: -4%;
                     top: 45%;
@@ -175,10 +170,10 @@ main {
 
                 .lin {
                     border: 1px solid #D87A1E;
-                    width: 78%;
+                    width: 73%;
                     position: absolute;
-                    top: 6%;
-                    left: 21%;
+                    top: 2%;
+                    left: 24%;
 
                 }
 
@@ -189,8 +184,6 @@ main {
                     bottom: -25%;
                     transform: rotateX(160deg);
                 }
-
-
 
                 #span {
                     position: absolute;
@@ -226,7 +219,6 @@ main {
                         height: 100%;
                         width: 100%;
                         object-fit: cover;
-
                     }
                 }
 
@@ -277,10 +269,7 @@ main {
                         position: absolute;
                         top: 5%;
                         right: 40%;
-
                     }
-
-
                 }
 
                 .centerbox {
@@ -302,26 +291,19 @@ main {
                     top: -10%;
                 }
 
-
                 #dots {
                     height: 100%;
                     width: 30%;
                     clip-path: polygon(50% 0%, 82% 14%, 85% 57%, 67% 100%, 17% 100%, 0 55%, 8% 10%);
                     margin-right: 10%;
                     opacity: 0.3;
-
                 }
 
-
-
                 #pump {
-
                     height: 22vw;
-
                     position: absolute;
                     top: -74%;
                     left: 35%;
-
                     object-fit: cover;
                     z-index: 9;
                     margin-bottom: 10%;
@@ -335,19 +317,15 @@ main {
                     flex-direction: column;
                     overflow: hidden;
 
-
                     img {
                         height: 70%;
                         width: 100%;
                         object-fit: cover;
                     }
-
-
                 }
             }
 
             .centerfooter {
-
                 display: grid;
                 grid-template-columns: 1fr 40% 1fr;
                 grid-template-areas: "footerleft footercen footerright";
@@ -355,12 +333,9 @@ main {
                 background-size: cover;
                 background-position: center;
 
-
                 .footerleft {
                     grid-area: footerleft;
-
                     position: relative;
-
 
                     .footerlefttop {
                         @include flex();
@@ -380,10 +355,7 @@ main {
                             width: 100%;
                             object-fit: cover;
                         }
-
-
                     }
-
 
                     .hand {
                         position: absolute;
@@ -433,19 +405,13 @@ main {
 
                 }
 
-
-
-
                 .footercen {
                     grid-area: footercen;
                     color: white;
                     @include flex();
                     justify-content: end;
                     flex-direction: column;
-
                     position: relative;
-
-
 
                     .textfootercen {
                         @include flex();
@@ -459,7 +425,6 @@ main {
                             font-weight: 300;
                             color: #D87A1E;
                             font-size: 15px;
-
                         }
                     }
 
@@ -468,7 +433,6 @@ main {
                         font-family: f4;
                         line-height: 1;
                     }
-
 
                     .glasstube {
                         height: 100px;
@@ -484,7 +448,6 @@ main {
                         }
                     }
 
-
                     .lungs2 {
                         height: 100px;
                         width: 100px;
@@ -498,10 +461,6 @@ main {
                             object-fit: cover;
                         }
                     }
-
-
-
-
                 }
 
                 .footerright {
@@ -529,7 +488,6 @@ main {
                             height: 25vw;
                             object-fit: cover;
                             rotate: -20deg;
-
                         }
 
                     }
@@ -542,8 +500,6 @@ main {
                         position: absolute;
                         right: 6%;
                         top: 18%;
-
-
                     }
 
                     #footerrightbox2 {
@@ -556,13 +512,10 @@ main {
                         top: 18%;
                         overflow: hidden;
 
-
                         img {
                             height: 200%;
                             object-fit: cover;
                         }
-
-
                     }
 
                     #footerrightbox3 {
@@ -573,8 +526,6 @@ main {
                         position: absolute;
                         right: -15%;
                         top: 43%;
-
-
                     }
 
                     i {
@@ -583,7 +534,6 @@ main {
                         bottom: 30%;
                         font-size: 25px;
                     }
-
 
                     .dots {
                         display: flex;
@@ -603,10 +553,6 @@ main {
                         background-color: rgb(0, 0, 0);
                         border-radius: 50%;
                     }
-
-
-
-
                 }
             }
         }
@@ -621,7 +567,6 @@ main {
                 bottom: 0;
                 left: 0;
             }
-
         }
     }
 
@@ -647,8 +592,6 @@ main {
             top: -20%;
             right: -18%;
             width: 30%;
-
-
         }
 
         >h1 {
@@ -668,8 +611,6 @@ main {
                 color: rgb(255, 255, 255);
 
             }
-
-
         }
 
         >h2 {
@@ -681,35 +622,30 @@ main {
             top: 50%;
             font-size: 10rem;
             text-shadow: 1px 5px 5px black;
-
-
         }
 
         @mixin lines() {
             height: 2px;
-            width: 250px;
             background-color: #000000;
-
         }
 
         .page2lin1 {
             @include lines();
             position: absolute;
+            width: 300px;
             rotate: 90deg;
-            top: 40%;
-            left: 18%;
+            top: 35%;
+            left: 16%;
         }
 
         .page2lin2 {
             @include lines();
             position: absolute;
             rotate: 90deg;
-            top: 43%;
-            right: 20%;
-            width: 200px;
+            top: 36%;
+            right: 21%;
+            width: 220px;
         }
-
-
 
         .page2header {
             grid-area: page2header;
@@ -729,9 +665,7 @@ main {
                 z-index: 99;
                 height: 200px;
                 width: 200px;
-
             }
-
         }
 
         .page2centerleft {
@@ -743,14 +677,12 @@ main {
             align-items: end;
             padding: 2rem 0rem;
 
-
             img {
                 height: 20vw;
                 position: absolute;
                 bottom: -8%;
                 left: 0;
                 z-index: 99;
-
             }
 
             h1 {
@@ -782,6 +714,8 @@ main {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             height: 80%;
             position: relative;
+            display: flex;
+            flex-direction: column;
 
             h1 {
                 font-size: 1rem;
@@ -791,17 +725,13 @@ main {
                 font-weight: 600;
             }
 
-            display: flex;
-            flex-direction: column;
-
-
-            .page2centercenterbottom {
+                .page2centercenterbottom {
                 display: flex;
                 color: white;
 
 
                 .page2centercenterbottomleft {
-                    width: 50%;
+                    width: 45%;
                     padding: 0rem 1rem;
 
                     h1 {
@@ -821,11 +751,7 @@ main {
                             position: absolute;
                             left: 10px;
                             border: 1px orange solid;
-
-
                         }
-
-
                     }
 
                     p {
@@ -837,7 +763,6 @@ main {
 
                 .page2centercenterbottomright {
                     width: 50%;
-
 
                     h1 {
                         background-color: #44413C;
@@ -855,37 +780,29 @@ main {
                             width: 20px;
                             border-radius: 50%;
                             position: absolute;
-                            left: 0;
                             border: 1px orange solid;
                             left: 10px;
-
-
                         }
-
-
                     }
 
                     p {
                         font-size: 0.7rem;
                         color: black;
                         font-weight: 600;
-
                     }
                 }
-
             }
 
             .childimg {
                 position: absolute;
-                bottom: -30%;
+                z-index: 99;
+                bottom: -53%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-
                 img {
-                    width: 12%;
-                    height: 100%;
+                    width: 15%;
                 }
             }
         }
@@ -896,7 +813,7 @@ main {
             position: relative;
             display: flex;
             flex-direction: column;
-            justify-content: end;
+            justify-content: center;
             padding: 0rem 1rem;
             overflow: hidden;
 
@@ -911,15 +828,9 @@ main {
                 font-size: 0.8rem;
                 font-weight: 600;
             }
-
-
-
-
-
         }
 
         .page2footer {
-
             grid-area: page2footer;
             position: relative;
             background-image: url(./assets/page2footer2.0.png);
@@ -994,42 +905,36 @@ main {
                 @include round();
                 top: 49%;
                 left: 14%;
-
             }
 
             .round2 {
                 @include round();
                 top: 54%;
                 left: 22%;
-
             }
 
             .round3 {
                 @include round();
                 top: 50%;
                 left: 30%;
-
             }
 
             .round4 {
                 @include round();
                 top: 54%;
                 left: 38%;
-
             }
 
             .round5 {
                 @include round();
                 top: 42%;
                 left: 46%;
-
             }
 
             .round6 {
                 @include round();
                 top: 54%;
                 left: 53%;
-
             }
 
             @mixin text() {
@@ -1077,10 +982,6 @@ main {
                 top: 55%;
                 left: 55%;
             }
-
-
-
-
         }
     }
 
@@ -1091,7 +992,6 @@ main {
         background-size: cover;
         position: relative;
         overflow-y: hidden;
-
 
         .page3header {
             height: auto;
@@ -1110,14 +1010,12 @@ main {
                 color: #EC9E43;
             }
 
-
             .lintext {
                 height: 100%;
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 gap: 10px;
 
@@ -1131,11 +1029,10 @@ main {
                     display: flex;
                     justify-content: space-between;
 
-
                     .lintextleft {
                         width: 50%;
                         font-size: 0.7rem;
-                         font-weight: 500
+                        font-weight: 500;
                     }
 
                     .lintextright {
@@ -1144,8 +1041,6 @@ main {
                          font-weight: 500
                     }
                 }
-
-
             }
         }
 
@@ -1153,9 +1048,7 @@ main {
             height: 100%;
             width: 25%;
             display: flex;
-
             justify-content: space-between;
-
 
             img {
                 height: 60px;
@@ -1166,13 +1059,13 @@ main {
         }
 
         .roundtext {
-            width: 55vw;
-            height: 55vw;
+            width: 45vw;
+            height: 45vw;
             background-color: #9E4733;
             position: absolute;
             border-radius: 50%;
             bottom: -50%;
-            left: 23%;
+            left: 25%;
             display: flex;
             justify-content: center;
             text-align: center;
@@ -1184,15 +1077,12 @@ main {
             }
         }
 
-
-
         @mixin page3lin(){
             height: 2px;
             width: 30%;
             border-top:   2px dotted #60352b;
             position: absolute;
             rotate: 90deg
-
         }
 
         .page3lin1{
@@ -1200,7 +1090,6 @@ main {
             top: 70%;
             left: -7%;
             width: 22%;
-
         }
 
          .page3lin2{
@@ -1208,7 +1097,6 @@ main {
             top: 57%;
             left: 11%;
             width: 34%;
-
         }
           .page3lin3{
             @include page3lin();
@@ -1235,8 +1123,6 @@ main {
 
         @mixin linetext(){
             width: 20%;
-        
-           
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             position: absolute;
             h1{
@@ -1248,31 +1134,26 @@ main {
                 font-size: 0.7rem;
                 margin-top: 10px;
                 line-height: 1.5;
-                font-weight: 500
-                
-            }
-            
+                font-weight: 500    
+            }           
         }
 
         .lin1textpage3{
             @include linetext ();
             top: 50%;
             left: 6%;
-            
         }
 
         .lin2textpage3{
              @include linetext ();
             top: 25%;
             left: 32%;
-
         }
 
         .lin3textpage3{
              @include linetext ();
             top: 25%;
             left: 57%;
-
         }
 
         .lin4textpage3{
@@ -1280,11 +1161,7 @@ main {
             top: 50%;
             left: 80%;
             width: 15%;
-
         }
-
-
-
 
         #clouds1 {
             width: 20%;
@@ -1307,5 +1184,4 @@ main {
             z-index: 99;
         }
     }
-
 }
